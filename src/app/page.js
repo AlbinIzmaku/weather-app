@@ -6,6 +6,7 @@ import LocationIcon from "@/svg/location";
 import PlusIcon from "@/svg/plus";
 import styles from "@/app/page.module.css";
 import Menu from "@/svg/menu";
+import Shape from "@/svg/shape";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
           width: "100%",
           height: "auto",
           border: "1px solid red",
+          boxSizing: 'border-box'
         }}
       />
       <div className={styles.menu}>
@@ -42,7 +44,7 @@ export default function Home() {
         <div
           style={{
             width: "90%",
-            margin: 'auto',
+            margin: "auto",
             display: "flex",
             justifyContent: "space-between",
           }}
@@ -50,7 +52,10 @@ export default function Home() {
           <LocationIcon />
           <Menu />
         </div>
-        <div className={styles.plus}></div>
+        <div>
+          <Shape />
+          <PlusIcon />
+        </div>
       </div>
     </main>
   );
