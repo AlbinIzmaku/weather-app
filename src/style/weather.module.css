@@ -1,0 +1,96 @@
+.main {
+  width: 100%;
+  background-color: #48319d;
+  height: 500px;
+  overflow-x: hidden;
+  position: relative;
+  background: linear-gradient(
+    167.57deg,
+    rgba(46, 51, 90, 0.26) -4.68%,
+    rgba(28, 27, 51, 0.26) 95.45%
+  );
+  box-shadow: inset 0px 1px 0px #ffffff;
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 44px;
+}
+.forecastContainer {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.forecastRectangle {
+  text-align: center;
+}
+.forecastRectangle img {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px #ffffff;
+  backdrop-filter: blur(25px);
+  border-radius: 44px;
+}
+.forecastText {
+  display: flex;
+  justify-content: space-between;
+}
+.forecastText button {
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: rgba(235, 235, 245, 0.6);
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.forecastText button:active {
+  border-bottom: 1px solid #fff;
+}
+.hourlyContainer {
+  display: flex;
+  width: 110%;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+  justify-content: space-between;
+}
+.ellipse3 {
+  position: absolute;
+  width: 286px;
+  height: 9.89px;
+  left: 48px;
+  top: -9.89px;
+
+  background: #e0d9ff;
+  filter: blur(5px);
+}
+.ellipse2 {
+  position: absolute;
+  width: 286px;
+  height: 32px;
+  left: 48px;
+  top: -33px;
+
+  background: rgba(196, 39, 251, 0.5);
+  filter: blur(30px);
+}
+.ellipse1 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 271px;
+  top: 65px;
+
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #612fab -47.46deg,
+    rgba(97, 47, 171, 0) 50.02deg,
+    #612fab 129.55deg,
+    rgba(97, 47, 171, 0) 226.06deg,
+    #612fab 312.54deg,
+    rgba(97, 47, 171, 0) 410.02deg
+  );
+  filter: blur(70px);
+}
+
